@@ -3,7 +3,7 @@ import styles from './header.module.css';
 import Image from 'next/image';
 
 export default async function Header() {
-  const user = true;
+  const user = false;
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
@@ -21,7 +21,7 @@ export default async function Header() {
             dogs
           </Link>
         ) : (
-          <Link href={'/dogs'} className={styles.login}>
+          <Link href={'/login'} className={styles.login}>
             Login / Criar
           </Link>
         )}
