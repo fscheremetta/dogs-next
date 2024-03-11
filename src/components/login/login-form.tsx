@@ -37,7 +37,7 @@ export default function LoginForm() {
   return (
     <>
       <form action={action} className={styles.form}>
-        <Input label="Usuário" name="username" />
+        <Input label="Usuário" name="username" type="text" />
         <Input label="Senha" name="password" type="password" />
         <ErrorMessage error={state.error} />
         <FormButton />
